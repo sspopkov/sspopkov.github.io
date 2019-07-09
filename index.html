@@ -1,26 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<title>Резюме</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
-	<nav>
-		<ul>
-			<li><a class="current" href="index.html">Резюме</a></li>
-			<li><a href="map.html">Карта</a></li>
-			<li><a href="timer.html">Таймер</a></li>
-		</ul>
+	<nav class="navbar">
+		<div class="container-fluid">
+			<ul class="navbar-nav nav-fill w-100 flex-md-row">
+				<li class="nav-item"><a class="activeLink border border-secondary nav-link" href="index.html">Резюме</a></li>
+				<li class="nav-item"><a class="border border-secondary nav-link" href="map.html">Карта</a></li>
+				<li class="nav-item"><a class="border border-secondary nav-link" href="timer.html">Таймер</a></li>
+			</ul>
+		</div>
 	</nav>
-	<section>
-		<article>
-			<img src="../assets/photo.jpg" alt="Photograph" width="300" height="300">
-			<h2>Контакты</h2>
-			<p>example@example.com</p>
-			<h2>Навыки</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, hic assumenda aliquam architecto totam repudiandae veniam laudantium facilis animi. Beatae quia omnis magnam, doloremque assumenda porro? Officiis, officia fugiat aliquam iure, quas dolor odit illo recusandae molestiae nulla sit accusamus doloribus voluptatem sequi nostrum modi, exercitationem quo tempore, itaque consectetur?</p>
-		</article>
-	</section>
+	<div class="content">
+		<div class="container-fluid border border-secondary rounded">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="assets/photo.jpg" alt="Photograph" class="rounded img-fluid" width="300" height="300">
+						<h2>Обо мне</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi nisi dolores corporis. Earum, ab!</p>
+						<h2>Навыки</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati repellendus modi excepturi quisquam id aspernatur assumenda fugit.</p>
+					</div>
+					<div class="col-md-8">
+						<h2>Опыт работы</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur explicabo est consequatur, ullam voluptatem labore quisquam eveniet in inventore recusandae nostrum quos magnam asperiores, repellat rem vero vel veniam quidem, quam minus nulla illo. Debitis iusto velit laboriosam nulla itaque magni ipsam numquam minima nostrum laudantium. Error minus minima repellendus quasi quam aliquid eaque excepturi accusamus ullam numquam reiciendis placeat aliquam cupiditate itaque nulla doloremque, ipsam corporis eius odit consectetur repudiandae dicta nobis possimus nesciunt rem. Earum debitis recusandae quas facilis dolores nisi voluptas quae in error eligendi tempore, enim cum dolore, vitae quos veniam, dolor ex rem eos eveniet.</p>
+						<h2>Контакты</h2>
+						<p>example@example.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
