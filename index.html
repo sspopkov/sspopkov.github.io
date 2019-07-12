@@ -12,7 +12,7 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
-<body>
+<body onload="start()">
 	
 	<div class="navigationBar">
 		<ul class="nav nav-pills nav-justified" id="mainTab" role="tablist">
@@ -26,9 +26,14 @@
 					Карта
 				</a>
 			</li>
-			<li class="nav-item timerLink" onclick="start()">
+			<li class="nav-item timerLink">
 				<a class="btn border border-secondary nav-link" id="timer-tab" data-toggle="tab" href="#timer" role="tab" aria-controls="timer" aria-selected="false">
 					Таймер
+				</a>
+			</li>
+			<li class="nav-item timer-2Link">
+				<a class="btn border border-secondary nav-link" id="timer-2-tab" data-toggle="tab" href="#timer-2" role="tab" aria-controls="timer-2" aria-selected="false">
+					Таймер-2
 				</a>
 			</li>
 		</ul>
@@ -43,16 +48,40 @@
 						<div class="row">
 							<div class="col-md-4">
 								<img src="assets/photo.jpg" alt="Photograph" class="rounded img-fluid" width="300" height="300">
-								<h2>Обо мне</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem commodi nisi dolores corporis. Earum, ab!</p>
-								<h2>Навыки</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati repellendus modi excepturi quisquam id aspernatur assumenda fugit.</p>
+								<h2>Личные данные</h2>
+								<p>Дата рождения: 12.04.1998</p>
+								<p>Адрес: г. Дубна, ул. Программистов, д. 13, кв. 76</p>
+								<h2>Личные качества</h2>
+								<p>Трудолюбие, ответственность, целеустремленность, пунктуальность</p>
+								<h2>Контакты</h2>
+								<p>Телефон: 8 (985) 625-35-51</p>
+								<p>Электронная почта: <a href="mailto:seregapopkov98@yandex.ru">seregapopkov98@yandex.ru</a></p>
 							</div>
 							<div class="col-md-8">
+								<h2>Образование</h2>
+								<p>2015 – настоящее время – Университет «Дубна». Институт системного анализа и управления, кафедра Распределенных информационно-вычислительных систем, направление: Программная инженерия</p>
 								<h2>Опыт работы</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur explicabo est consequatur, ullam voluptatem labore quisquam eveniet in inventore recusandae nostrum quos magnam asperiores, repellat rem vero vel veniam quidem, quam minus nulla illo. Debitis iusto velit laboriosam nulla itaque magni ipsam numquam minima nostrum laudantium. Error minus minima repellendus quasi quam aliquid eaque excepturi accusamus ullam numquam reiciendis placeat aliquam cupiditate itaque nulla doloremque, ipsam corporis eius odit consectetur repudiandae dicta nobis possimus nesciunt rem. Earum debitis recusandae quas facilis dolores nisi voluptas quae in error eligendi tempore, enim cum dolore, vitae quos veniam, dolor ex rem eos eveniet.</p>
-								<h2>Контакты</h2>
-								<p>example@example.com</p>
+								<p>Июль 2017 – настоящее время «УНЦ ОИЯИ», старший лаборант</p>
+								<h2>Курсы</h2>
+								<p>Семестровый курс по технологиям параллельного программирования в ЛИТ ОИЯИ</p>
+								<p>Моделирование динамики движения заряженных частиц циклического ускорителя в ЛФВЭ ОИЯИ</p>
+								<h2>Публикации</h2>
+								<p>Публикация «FILE SYSTEM ACCESS SPEED TEST» в постерной сессии на конференции International Conference on Mathematical Modeling and Computational Physics MMCP’2017</p>
+								<p>Публикация «FILE SYSTEM ACCESS SPEED TEST» в постерной сессии на конференции МКО-2018</p>
+								<h2>Профессиональные навыки</h2>
+								<p>Средние знания языков Си-подобного синтаксиса: C, C++, C#, C++/CLI</p>
+								<p>Владение средствами параллельного программирования: MPI, OpenMP, CUDA</p>
+								<p>Уверенные знания среды разработки Visual Studio</p>
+								<p>Опыт работы с платформой ASP.Net</p>
+								<p>Опыт работы с базами данных MySQL, SQLite, Oracle</p>
+								<p>Средние знания языка программирования PL/SQL</p>
+								<p>Умение работать с HTML-разметкой веб-страниц, таблицами стилей CSS</p>
+								<p>Начальные знания фронтэнд-фреймворка bootstrap</p>
+								<p>Начальные знания в программировании мобильных приложений (Android Studio)</p>
+								<p>Опыт работы с Adobe Photoshop CS6</p>
+								<p>Знание английского языка на уровне, достаточном для работы с зарубежными ресурсами (StackOwerflow, github и т.д.)</p>
+								<p>Понимание различных паттернов проектирования, в частности системного паттерна Model-View-Controller</p>
+								<p>Умение работать в системе контроля версий Git</p>
 							</div>
 						</div>
 					</div>
@@ -85,10 +114,15 @@
 
 	 	</div>
 	  	<div class="tab-pane fade" id="timer" role="tabpanel" aria-labelledby="timer-tab">
+
 	  		<script language="javascript" src="scripts/script.js"></script>
 			<p style="display: flex; justify-content: center; align-items: center;">Вы находитесь на сайте:</p>
 			<h1 id="output" style="display: flex; justify-content: center; align-items: center;"></h1>
 			<div id="clockDisplay" class="container"></div>
+
+	  	</div>
+	  	<div class="tab-pane fade" id="timer-2" role="tabpanel" aria-labelledby="timer-2-tab">
+
 	  	</div>
 	</div>
 

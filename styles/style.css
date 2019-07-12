@@ -11,14 +11,16 @@ body, html {
 
 .nav-pills .resumeLink .nav-link:not(.active),
 .nav-pills .mapLink .nav-link:not(.active),
-.nav-pills .timerLink .nav-link:not(.active) {
+.nav-pills .timerLink .nav-link:not(.active),
+.nav-pills .timer-2Link .nav-link:not(.active) {
     background-color: white;
     color: #2F4F4F;
 }
 
 .nav-pills .resumeLink .nav-link, 
 .nav-pills .mapLink .nav-link,
-.nav-pills .timerLink .nav-link {
+.nav-pills .timerLink .nav-link,
+.nav-pills .timer-2Link .nav-link {
 	outline: none !important;
    	box-shadow: none;
     background-color: #D3D3D3;
