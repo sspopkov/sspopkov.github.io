@@ -2,6 +2,10 @@ var time = 0;
 var running = 0;
 
 function start() {
+	start_simple_timer();
+}
+
+function start_simple_timer() {
 	if (running == 0)
 		increment();
 	running = 1;
